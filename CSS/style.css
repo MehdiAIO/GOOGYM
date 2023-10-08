@@ -1,0 +1,616 @@
+* {
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 1em;
+}
+::-webkit-scrollbar-track {
+  background-color: #777;
+  color: #2e2d2d;
+}
+::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 10px;
+}
+.nav2{
+    width: 100%;
+    display: none;
+    position: fixed;
+}
+
+.fa-bars{
+    font-size: 30px;
+    color: red;
+}
+input{
+    display: none;
+}
+#menu:checked + ul{
+    display: block;
+}
+ul{
+    transition: 0.3s;
+    display: none;
+}
+ul li{
+    border-bottom: solid white 0.5px;
+    list-style: none;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+ul li a{
+    text-decoration: none;
+    padding: 0;
+    color: #fff;
+}
+ul li a:hover{
+    color: orangered;
+    border-bottom: orange solid;
+}
+.nav2 div ul li{
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 7px;
+
+}
+.nav2 h1{
+    color: orangered;
+}
+.nav2{
+    background-color: gray;
+    max-width: 500px;
+}
+.nav2 div{
+    flex-wrap: wrap;
+    width: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav2 div ul{
+    width: 400px;
+    transition: 0.3s;
+}
+.nav {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(100, 99, 99);
+}
+.landing2{
+    display: none;
+}
+@media (max-width: 500px) {
+  .nav {
+    display: none;
+  }
+  .nav2{
+    width: 100%;
+    display: block;
+  }
+  .landing2{
+    display: block;
+    background-image: url(../images/landing.png);
+    background-size: 100% 100%;
+    width: 100%;
+    max-width: 100%;
+    height:50vh;
+  }
+  .landing{
+    display: none;
+  }
+}
+.hide {
+  height: 78px;
+}
+.proprities a {
+  display: block;
+  text-decoration: none;
+  padding: 0px 10px;
+  color: #fff;
+  transition: 0.3s;
+}
+.proprities a:hover {
+  border-bottom: orange solid 3px;
+  color: orangered;
+}
+.proprities {
+  display: flex;
+  align-items: center;
+}
+.icons {
+  display: flex;
+  align-items: center;
+}
+.icons i {
+  padding: 0 3.5px;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.icons i:hover {
+  color: orangered;
+}
+.nav h1 {
+  color: orangered;
+  cursor: pointer;
+}
+.landing {
+  background-image: url(../images/landing.png);
+  background-size: 100% 100%;
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+}
+.landing .o {
+  color: #fff;
+  font-size: 27px;
+  letter-spacing: 7px;
+}
+.n,
+.e,
+.r {
+  font-size: 90px;
+  font-family: fantasy;
+  color: #fff;
+}
+.e {
+  color: orangered;
+}
+.text button {
+  margin-top: 30px;
+  width: 140px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  color: #fff;
+  background-image: linear-gradient(to right, #fb5283, #ff3527);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: width 0.5s;
+}
+.text button img {
+  width: 30px;
+  display: none;
+}
+.text button:hover img {
+  display: block;
+}
+.text button:hover {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text {
+  padding-top: 25vh;
+  padding-left: 120vh;
+}
+@media (max-width:500px){
+    .text{
+        padding-left: 2vh;
+        padding-top: 15vh;
+    }
+    .landing2 .o {
+        color: #fff;
+        font-size: 10px;
+        letter-spacing: 7px;
+      }
+      .n,
+.e,
+.r {
+  font-size: 50px;
+}
+    .text button{
+        width: 80px;
+        font-size: 10px;
+        overflow: hidden;
+    }
+}
+.textt {
+  margin: 0%;
+  text-align: center;
+  background-color: black;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.textt h1 {
+  font-family: fantasy;
+  color: #fff;
+  font-weight: 300;
+}
+.textt p {
+  color: orangered;
+}
+#features .container {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+#features .feat {
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+  padding-bottom: 50px;
+}
+#features .feat h3 {
+  font-weight: 800;
+  margin: 30px 0;
+}
+#features .feat p {
+  line-height: 1.8;
+  color: #777;
+  font-size: 13px;
+}
+.feat i {
+  color: orangered;
+  background-color: #2e2d2d;
+  padding: 20px;
+  border-radius: 100%;
+}
+.feat h3 {
+  color: #fff;
+  font-family: fantasy;
+  font-weight: 100;
+}
+.feat:hover i {
+  background-color: orangered;
+  color: #fff;
+}
+#classes {
+  height: 466vh;
+  background-color: #1c1c1c;
+}
+#classes .textt {
+  background-color: #1c1c1c;
+}
+.categories div {
+  height: 300px;
+  width: 300px;
+  background-color: #fb5283;
+}
+.categories {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width:500px){
+    .categories div{
+        margin-bottom: 45px;
+    }
+}
+.categories .one {
+  background-image: url(../images/powerlifting.png);
+  background-size: cover;
+  transition: 0.3s;
+}
+.categories .one:hover {
+  transform: scale(1.1);
+}
+.categories .two {
+  background-image: url(../images/cardio.png);
+  background-size: cover;
+  transition: 0.3s;
+}
+.categories .two:hover {
+  transform: scale(1.1);
+}
+.categories .three {
+  background-image: url(../images/kettlebell.png);
+  background-size: cover;
+  transition: 0.3s;
+}
+.categories .three:hover {
+  transform: scale(1.1);
+}
+.categories div footer {
+  height: 90px;
+  background-color: black;
+  margin-top: 250px;
+  border-top: solid gray;
+}
+.categories div footer p {
+  color: orangered;
+  text-align: left;
+  font-size: 12px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.categories div footer h2 {
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 20px;
+  font-family: fantasy;
+  color: #fff;
+  font-weight: 100;
+}
+.categories-b {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.categories-b .onee {
+  background-image: url(../images/calesthenics.png);
+  background-size: cover;
+  transition: 0.3s;
+}
+.categories-b .onee:hover {
+  transform: scale(1.1);
+}
+.categories-b .twoo {
+  background-image: url(../images/boxing.png);
+  background-size: cover;
+  transition: 0.3s;
+}
+.categories-b .twoo:hover {
+  transform: scale(1.1);
+}
+.categories-b div {
+  margin-top: 100px;
+  height: 300px;
+  width: 300px;
+  background-color: #fb5283;
+}
+.categories-b div footer {
+  height: 90px;
+  background-color: black;
+  margin-top: 250px;
+  border-top: solid gray;
+}
+.categories-b div footer p {
+  color: orangered;
+  text-align: left;
+  font-size: 12px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.categories-b div footer h2 {
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 20px;
+  font-family: fantasy;
+  color: #fff;
+  font-weight: 100;
+}
+.landing-2 {
+  width: 100%;
+  height: 500px;
+  background-image: url(../images/landing-2.png);
+  background-size: cover;
+  margin-top: 150px;
+}
+.landing-2 h1 {
+  font-size: 60px;
+  color: orangered;
+}
+.landing-2 h1,
+h2 {
+  line-height: 30px;
+}
+@media (max-width:500px){
+    .landing-2 h1{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .landing-2 h2{
+        font-size: 20px;
+    }
+}
+.landing-2 button {
+  margin-top: 30px;
+}
+.landing-2 div {
+  padding-top: 140px;
+}
+.landing-2 div button {
+  padding: 20px;
+  background-color: transparent;
+  border: orangered solid;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.landing-2 button:hover {
+  color: #fff;
+  background-color: orangered;
+}
+.landing-2 h2 {
+  color: orange;
+}
+#words {
+  padding-top: 110px;
+}
+#words h2 {
+  line-height: 50px;
+  font-family: fantasy;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 100;
+}
+.chico {
+  display: flex;
+  height: 600px;
+  justify-content: space-around;
+  align-items: center;
+}
+.chico div {
+  padding-top: 42px;
+  width: 300px;
+  height: 500px;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.chico div:hover {
+  background-color: #fff;
+}
+.chico div:hover .part {
+  background-color: #fff;
+}
+.chico div:hover h2 {
+  color: black;
+}
+.chico div:hover button {
+  background-color: orangered;
+  color: #fff;
+}
+.chico div h2 {
+  font-family: fantasy;
+  font-weight: 100;
+  font-size: 30px;
+  color: #fff;
+}
+.chico div h1 {
+  font-size: 60px;
+  color: orangered;
+}
+.chico div h2,
+h1,
+h4 {
+  line-height: 36px;
+}
+.chico h1,
+h4 {
+  line-height: 15px;
+}
+.chico h4 {
+  color: #777;
+}
+.chico div p {
+  color: gray;
+  line-height: 30px;
+}
+.chico div .part {
+  height: 100px;
+  margin-top: 2px;
+}
+.chico div button {
+  padding: 15px 80px;
+  margin-top: 104px;
+  color: #fff;
+  background-color: #2e2d2d;
+  font-weight: 300;
+  cursor: pointer;
+  border: none;
+}
+.title p {
+  color: orangered;
+}
+@media (max-width:500px){
+    .chico{
+        flex-wrap: wrap;
+        height: 1600px;
+    }
+}
+.title h2 {
+  color: #fff;
+  font-family: fantasy;
+  font-weight: 100;
+  font-size: 30px;
+}
+.title {
+  padding-top: 40px;
+  line-height: 40px;
+}
+#trainers {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#trainers div {
+  background-size: cover;
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+  cursor: pointer;
+}
+#trainers .sarasaffari {
+  background-image: url(../images/sarasaffari.jpg);
+}
+#trainers .noeldeyzel {
+  background-image: url(../images/noeldeyzel.jpg);
+}
+#trainers .cbum {
+  background-image: url(../images/cbum.png);
+}
+#trainers div footer {
+  height: 90px;
+  background-color: black;
+  margin-top: 508px;
+  border-top: solid gray;
+  transition: 0.5s;
+  overflow: hidden;
+}
+#trainers div:hover footer {
+  transform: translateY(-100px);
+}
+#trainers div footer p {
+  color: orangered;
+  text-align: left;
+  font-size: 12px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+#trainers div footer h2 {
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 20px;
+  font-family: fantasy;
+  color: #fff;
+  font-weight: 100;
+}
+@media (max-width:500px){
+    #trainers{
+        flex-wrap: wrap;
+        height: 1600px;
+    }
+}
+.before-footer {
+  height: 120px;
+  background-color: #161616;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.before-footer div i {
+  color: #fff;
+  background-color: orangered;
+  padding: 20px;
+  border-radius: 50%;
+}
+.before-footer div {
+  color: #fff;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width:500px){
+    .before-footer div .fa-location-pin,.fa-phone,.fa-envelope{
+        font-size: 20px;
+    }
+    .before-footer div i{
+        padding: 6px;
+    }
+}
+#footer {
+  background-color: black;
+  color: gray;
+  text-align: center;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer span {
+  color: orangered;
+}
